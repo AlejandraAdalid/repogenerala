@@ -1,0 +1,126 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="anotador">
+    <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="left">
+            <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="ios-only">Back</span>
+            </a>
+        </div>
+        <div class="title">Anotador</div>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="block-title">Anotador</div>
+        <div class="block block-strong">
+            <input type="text" name="jug1" id="jug1">
+            <input type="text" name="jug2" id="jug2">
+            <hr>
+            <input type="button" id="j1-1" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-2" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-3" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-4" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-5" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-6" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-7" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-8" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-9" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-10" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j1-11" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <hr>
+            <input type="button" id="j2-1" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-2" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-3" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-4" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-5" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-6" value="" data-popup=".my-popup-nro" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-7" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-8" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-9" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-10" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <input type="button" id="j2-11" value="" data-popup=".my-popup-fig" class="popup-open btnIngresaValor">
+            <hr>
+            <input type="text" name="totalJ1" id="totalJ1" value="0">
+            <input type="text" name="totalJ2" id="totalJ2" value="0">
+            <hr>
+            <input type="button" value="Finalizar" data-popup=".my-popup-finalizar" class="popup-open btnLimpiaTermina">
+                        
+            <!-- And somewhere in DOM -->
+            <div class="popup my-popup-nro">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title">Ingresar puntaje</div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close">Cerrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                          <input type="button" value="" id="op1Dado" class="eligeAnotacion">
+                          <input type="button" value="" id="op2Dado" class="eligeAnotacion">
+                          <input type="button" value="" id="op3Dado" class="eligeAnotacion">
+                          <input type="button" value="" id="op4Dado" class="eligeAnotacion">
+                          <input type="button" value="" id="op5Dado" class="eligeAnotacion">
+                          <input type="button" value="Tachar" id="opTachar" class="eligeAnotacion">
+                          <input type="button" value="Cancelar" id="opCancelar" class="cancela">
+                          <input type="text" name="avisoRepeticion" id="avisoRepeticion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup my-popup-fig">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title">Ingresar forma</div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close">Cerrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                          <input type="button" value="Servida" id="opServida" class="eligeAnotacion">
+                          <input type="button" value="No servida" id="opNoServida" class="eligeAnotacion">
+                          <input type="button" value="Tachar" id="opTachar" class="eligeAnotacion">
+                          <input type="button" value="Cancelar" id="opCancelar" class="cancela">
+                          <input type="text" name="avisoRepeticion" id="avisoRepeticion">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup my-popup-finalizar">
+                <div class="view">
+                    <div class="page">
+                        <div class="navbar">
+                            <div class="navbar-bg"></div>
+                            <div class="navbar-inner">
+                                <div class="title">Advertencia</div>
+                                <div class="right">
+                                    <!-- Link to close popup -->
+                                    <a class="link popup-close">Cerrar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-content">
+                            <input type="text" name="avisoLimpia" id="avisoLimpia" value="" class="btnFinaliza">
+                            <input type="button" value="Limpiar" id="opLimpia" class="btnFinaliza">
+                            <input type="button" value="Terminar" id="opTermina" class="btnFinaliza">
+                            <input type="button" value="Cancelar" id="opCancelar" class="cancela">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
